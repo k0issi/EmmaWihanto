@@ -1,0 +1,334 @@
+/* PERUS JUTUT */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0px;
+    margin: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    background-color: rgb(241, 86, 125);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: "Unbounded", serif;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: rgb(255, 255, 255);
+}
+
+/* ERIKOIS JUTUT */
+
+.bold {font-weight: bold;
+}
+
+.biografia {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 5px;
+}
+
+body.etusivu {
+    background-image:
+    url('kuvat/JenkkiXTise_Emma.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* pinkki väri */
+
+.pinkki {color: rgb(241, 86, 125);
+
+}
+
+
+/* NAV JA LINKIT */
+
+nav {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    gap: 10px;
+    margin-bottom: 0px;
+    max-height: fit-content;
+    background-color: transparent;
+}
+
+nav a {
+    
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 50px;
+    flex: auto;
+    width: 150px;
+}
+
+nav a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(241, 86, 125); 
+    font-weight: bold;
+    justify-content: center;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    color: rgb(241, 86, 125);
+}
+
+a:hover {
+    color: rgb(241, 86, 125);
+    background-color: rgb(255, 255, 255);
+}
+
+/* FLEX CONTAINERS */
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 40px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.flex_container img {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    flex: 2; 
+    line-height: 1.5;
+    text-align: justify;
+    background-color: transparent; 
+}
+
+.text-content p {
+    margin: 0px 20px;
+}
+
+.flex_container_alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    gap: 20px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.flex_container_alt img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flex_container_alt p {
+    text-align: center;
+    margin: 5px;
+}
+
+/* ALATUNNISTE */
+
+footer {
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* MOBIILI */
+
+@media only screen and (max-width: 440px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 30px;
+        margin-bottom: 10px;
+        line-height: 1;
+    }
+
+    .flex_container {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: transparent;
+        gap: 15px;
+    
+    }
+
+    .flex_container img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    footer {
+        display: none; 
+    }
+
+}
+
+
+/* TABLETTI YMS. */
+
+@media only screen and (min-width: 441px) and (max-width: 1070px) {
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    nav a {
+        flex: auto;
+    }
+
+    h1 {
+        font-size: clamp(50px, 10vw + 2rem, 99px);
+        margin: 25px;
+        line-height: 1;
+        font-weight: 800;
+    }
+
+}
+
+@media only screen and (max-width: 845px) {
+
+    .flex_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+    
+    .flex_container img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+/* ISO RUUTU */
+
+
+@media only screen and (min-width: 1071px) {
+
+    nav {
+        font-family: "Unbounded", serif;
+        font-weight: 400;
+        font-size: 20px;
+        flex-direction: column;
+        max-height: max-content;
+        text-align: center;
+        align-items: flex-start;
+    }
+
+    .nav-container {
+        flex: 0 0 200px; 
+        background-color: transparent;
+        margin-right: 0px;
+    }
+
+    h1 {
+      
+        font-size: 100px;
+        line-height: 1;
+        font-weight: 900;
+        margin-left: 0px;
+    }
+    
+    .flex_container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+    }
+
+
+}

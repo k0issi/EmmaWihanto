@@ -52,7 +52,7 @@ h1 {
 
 body.etusivu {
     background-image:
-    url(../"JenkkiXTise_Emma.png");
+    url(./"JenkkiXTise_Emma.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

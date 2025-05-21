@@ -6,6 +6,16 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+        background-image:
+    url('./kuvat/pinkki.blender.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 header {
     padding: 0px;
     margin: 20px;
@@ -23,7 +33,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: helvetica, sans-serif;
-    background-color: #fbb4d2;
+    
     color: rgb(255, 255, 255);
 }
 
@@ -50,14 +60,7 @@ h1 {
     padding: 5px;
 }
 
-body.etusivu {
-    background-image:
-    url('./kuvat/pinkki.blender.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 
 /* pinkki väri */
 

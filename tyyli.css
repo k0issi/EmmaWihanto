@@ -172,7 +172,7 @@ a:hover {
 }
 
 .flex_container_alt iframe {
-    display: block;
+    display: inline-block;
     margin: auto;
 }
 

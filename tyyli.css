@@ -60,7 +60,10 @@ h1 {
     padding: 5px;
 }
 
-
+iframe {
+    display: block;
+    margin: auto;
+}
 
 /* pinkki väri */
 

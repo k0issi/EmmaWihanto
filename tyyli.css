@@ -172,9 +172,7 @@ a:hover {
 }
 
 .flex_container_alt iframe {
-    display: flex;
     align: center;
-    margin: auto;
 }
 
 /* ALATUNNISTE */
